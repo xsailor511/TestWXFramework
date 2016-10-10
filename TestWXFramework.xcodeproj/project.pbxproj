@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790B48D71DAB3F49001631C4 /* WXFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795A4D621DAB3EFB00A96CF2 /* WXFramework.framework */; };
+		790B48D81DAB3F49001631C4 /* WXFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 795A4D621DAB3EFB00A96CF2 /* WXFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		797E9B571DAA2AE900FCF844 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E9B551DAA2AE900FCF844 /* MyViewController.m */; };
+		797E9B581DAA2AE900FCF844 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797E9B561DAA2AE900FCF844 /* MyViewController.xib */; };
+		797E9B671DAA3A5300FCF844 /* NSBundle+YourFrameworkBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E9B661DAA3A5300FCF844 /* NSBundle+YourFrameworkBundle.m */; };
 		79CDE4D11DA8DFFA007D5DB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE4D01DA8DFFA007D5DB7 /* main.m */; };
 		79CDE4D41DA8DFFA007D5DB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE4D31DA8DFFA007D5DB7 /* AppDelegate.m */; };
 		79CDE4D71DA8DFFA007D5DB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE4D61DA8DFFA007D5DB7 /* ViewController.m */; };
@@ -15,6 +20,7 @@
 		79CDE4DF1DA8DFFA007D5DB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79CDE4DD1DA8DFFA007D5DB7 /* LaunchScreen.storyboard */; };
 		79CDE4EA1DA8DFFA007D5DB7 /* TestWXFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE4E91DA8DFFA007D5DB7 /* TestWXFrameworkTests.m */; };
 		79CDE4F51DA8DFFA007D5DB7 /* TestWXFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE4F41DA8DFFA007D5DB7 /* TestWXFrameworkUITests.m */; };
+		79CDE52F1DA92186007D5DB7 /* README.MD in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE52E1DA92186007D5DB7 /* README.MD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,37 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		790B48D91DAB3F49001631C4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				790B48D81DAB3F49001631C4 /* WXFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796CF6B91DA9DD3900F850AF /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		795A4D621DAB3EFB00A96CF2 /* WXFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WXFramework.framework; sourceTree = "<group>"; };
+		797E9B541DAA2AE900FCF844 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		797E9B551DAA2AE900FCF844 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		797E9B561DAA2AE900FCF844 /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		797E9B651DAA3A5300FCF844 /* NSBundle+YourFrameworkBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YourFrameworkBundle.h"; sourceTree = "<group>"; };
+		797E9B661DAA3A5300FCF844 /* NSBundle+YourFrameworkBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YourFrameworkBundle.m"; sourceTree = "<group>"; };
 		79CDE4CC1DA8DFFA007D5DB7 /* TestWXFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWXFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CDE4D01DA8DFFA007D5DB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		79CDE4D21DA8DFFA007D5DB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +87,7 @@
 		79CDE4F01DA8DFFA007D5DB7 /* TestWXFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWXFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CDE4F41DA8DFFA007D5DB7 /* TestWXFrameworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestWXFrameworkUITests.m; sourceTree = "<group>"; };
 		79CDE4F61DA8DFFA007D5DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CDE52E1DA92186007D5DB7 /* README.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790B48D71DAB3F49001631C4 /* WXFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +119,12 @@
 		79CDE4C31DA8DFFA007D5DB7 = {
 			isa = PBXGroup;
 			children = (
+				79CDE52E1DA92186007D5DB7 /* README.MD */,
 				79CDE4CE1DA8DFFA007D5DB7 /* TestWXFramework */,
 				79CDE4E81DA8DFFA007D5DB7 /* TestWXFrameworkTests */,
 				79CDE4F31DA8DFFA007D5DB7 /* TestWXFrameworkUITests */,
 				79CDE4CD1DA8DFFA007D5DB7 /* Products */,
+				79CDE5021DA8E037007D5DB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +150,11 @@
 				79CDE4DD1DA8DFFA007D5DB7 /* LaunchScreen.storyboard */,
 				79CDE4E01DA8DFFA007D5DB7 /* Info.plist */,
 				79CDE4CF1DA8DFFA007D5DB7 /* Supporting Files */,
+				797E9B541DAA2AE900FCF844 /* MyViewController.h */,
+				797E9B551DAA2AE900FCF844 /* MyViewController.m */,
+				797E9B561DAA2AE900FCF844 /* MyViewController.xib */,
+				797E9B651DAA3A5300FCF844 /* NSBundle+YourFrameworkBundle.h */,
+				797E9B661DAA3A5300FCF844 /* NSBundle+YourFrameworkBundle.m */,
 			);
 			path = TestWXFramework;
 			sourceTree = "<group>";
@@ -140,6 +185,14 @@
 			path = TestWXFrameworkUITests;
 			sourceTree = "<group>";
 		};
+		79CDE5021DA8E037007D5DB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				795A4D621DAB3EFB00A96CF2 /* WXFramework.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +203,8 @@
 				79CDE4C81DA8DFFA007D5DB7 /* Sources */,
 				79CDE4C91DA8DFFA007D5DB7 /* Frameworks */,
 				79CDE4CA1DA8DFFA007D5DB7 /* Resources */,
+				796CF6B91DA9DD3900F850AF /* Embed PlugIns */,
+				790B48D91DAB3F49001631C4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +304,7 @@
 				79CDE4DF1DA8DFFA007D5DB7 /* LaunchScreen.storyboard in Resources */,
 				79CDE4DC1DA8DFFA007D5DB7 /* Assets.xcassets in Resources */,
 				79CDE4DA1DA8DFFA007D5DB7 /* Main.storyboard in Resources */,
+				797E9B581DAA2AE900FCF844 /* MyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +331,10 @@
 			files = (
 				79CDE4D71DA8DFFA007D5DB7 /* ViewController.m in Sources */,
 				79CDE4D41DA8DFFA007D5DB7 /* AppDelegate.m in Sources */,
+				79CDE52F1DA92186007D5DB7 /* README.MD in Sources */,
 				79CDE4D11DA8DFFA007D5DB7 /* main.m in Sources */,
+				797E9B671DAA3A5300FCF844 /* NSBundle+YourFrameworkBundle.m in Sources */,
+				797E9B571DAA2AE900FCF844 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +481,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = TestWXFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richard.TestWXFramework;
@@ -433,6 +497,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = TestWXFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richard.TestWXFramework;
@@ -505,6 +574,7 @@
 				79CDE4FB1DA8DFFA007D5DB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79CDE4FC1DA8DFFA007D5DB7 /* Build configuration list for PBXNativeTarget "TestWXFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +583,7 @@
 				79CDE4FE1DA8DFFA007D5DB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79CDE4FF1DA8DFFA007D5DB7 /* Build configuration list for PBXNativeTarget "TestWXFrameworkUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +592,7 @@
 				79CDE5011DA8DFFA007D5DB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
