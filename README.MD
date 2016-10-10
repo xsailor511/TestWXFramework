@@ -1,5 +1,5 @@
 # Framework测试项目
-该项目用来测试自己新建的cocoa touch framework 项目：[WXFramework](http://www.jianshu.com/p/3bc8ea7b88ce)
+该项目用来测试自己新建的cocoa touch framework 项目：[WXFramework](https://github.com/xsailor511/WXFramework)
 
 1.引用头文件
 直接引用这个全局头文件，它包含了所有的头文件，不要引用具体的某个工具类头文件，会有警告：missing submodules
